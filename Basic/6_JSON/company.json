@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Google",
+        "numberOfEmployee": 120000,
+        "location": "USA",
+        "ceo":"Sundar Pichai" 
+    },
+
+    {
+        "name": "Microsfot",
+        "numberOfEmployee": 20000,
+        "location":"USA",
+        "ceo": "Bill Gates"
+    }
+]
