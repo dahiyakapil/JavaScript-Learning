@@ -6,6 +6,7 @@
     Closure is when a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope.
 
  */
+var m = 10;
 
 function x() {
   var a = 10;
@@ -13,13 +14,14 @@ function x() {
     b = 100;
     console.log(a);
   }
-  y();
+
   function z() {
-    console.log(b);
+    console.log(b); 
   }
 
-  z();
+  return { y, z };
 }
 
-console.log(200)
+console.log(m);
+console.log(200);
 x();

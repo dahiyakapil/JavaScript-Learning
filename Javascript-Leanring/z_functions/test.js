@@ -63,19 +63,36 @@
 // console.log(tea.encryptPassword());
 // console.log(tea.changeUsername());
 
-function createUser(username, score){
-    this.username = username
-    this.score = score
+// function createUser(username, score){
+//     this.username = username
+//     this.score = score
+// }
+
+// createUser.prototype.increment = function(){
+//     this.score++
+// }
+// createUser.prototype.printMe = function(){
+//     console.log(`price is ${this.score}`);
+// }
+
+// const chai = new createUser("chai", 25)
+// const tea = createUser("tea", 250)
+
+// chai.printMe()
+
+
+
+function getValue() { // window or this
+    console.log(x) // undefined
 }
 
-createUser.prototype.increment = function(){
-    this.score++
-}
-createUser.prototype.printMe = function(){
-    console.log(`price is ${this.score}`);
-}
+let x = 10; // value initialized .... not a gloabl scope variable script scope
+/**
+ 
 
-const chai = new createUser("chai", 25)
-const tea = createUser("tea", 250)
+ 
+ * 
+ */
+getValue();
 
-chai.printMe()
+
