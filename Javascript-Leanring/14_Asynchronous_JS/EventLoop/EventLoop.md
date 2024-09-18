@@ -35,5 +35,3 @@ Api Calling <br />
 Set Timeout function <br />
 
 
-![Alt text](Javascript-Leanring\14_Asynchronous_JS\EventLoop\Event_Loop3.png)
-
