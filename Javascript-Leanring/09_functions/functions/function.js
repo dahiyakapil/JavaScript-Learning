@@ -73,9 +73,9 @@ let fn = function b() {
 }
 
 // Anonomouse Function they are used there we have to have to pass the function as value
-// function () {
-//     console.log("This is anonomous fucntion")
-// }
+function () {
+    console.log("This is anonomous fucntion")
+}
 
 // Diff b/w parameters and arguments 
 
