@@ -33,4 +33,17 @@
     console.log("This is anonomous fucntion")
     }
 
+## 5 Difference between parameters and arguments
+     When we creating a function  & put some variabels in this ( ) that is our Parameters.
+       For Ex - function ab( param1, param2 ){
+                              console.log(" ")
+                      }
+       & When we call this function & pass a variabel in this ( ) that is our Arguments
+       For Ex - ab( 4, 5 );
+
+       function getValue (a, b) { // parameters
+        return a + b;
+    }
+
+    console.log( getValue(1, 2)); // arguments
 
