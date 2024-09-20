@@ -20,7 +20,7 @@
 // console.log("Runs")
 
 function x(y){
-  console.log("This is function x")
+  console.log("This is function x") 
   y();
 }
 
