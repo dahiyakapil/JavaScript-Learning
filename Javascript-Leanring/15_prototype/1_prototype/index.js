@@ -18,3 +18,4 @@ let obj2 = new Person("Aditya", "Hyderabad");
 // Call the method on the instances
 obj.getDetails(); // Kapil is from Panipat
 obj2.getDetails(); // Aditya is from undefined (city is not provided)
+
