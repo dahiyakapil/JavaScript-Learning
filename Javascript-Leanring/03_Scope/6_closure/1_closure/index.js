@@ -46,18 +46,18 @@
 //         }
 //     console.log("Runs")
 //   }
-  
+
 //   x();
 
 // let behaves different in this case
 
 function x() {
-    for(let i = 1; i <= 5; i++) {
-        setTimeout( function(){
-            console.log(i)
-        }, i * 1000)
-    }
-    console.log("Let variable")
+  for (let i = 1; i <= 5; i++) {
+    setTimeout(function () {
+      console.log(i);
+    }, i * 1000);
+  }
+  console.log("Let variable");
 }
 
 x();

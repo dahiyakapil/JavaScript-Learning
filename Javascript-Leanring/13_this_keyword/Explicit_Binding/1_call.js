@@ -20,7 +20,7 @@ const user = new createUser('Kapil', 'kapd@gmail.com', 123)
 
 console.log(user);
 
-console.log("------------------------------")
+console.log("----------------------------------------------------------------------------------")
 
 function User(name, age, city) {
     this.name = name
