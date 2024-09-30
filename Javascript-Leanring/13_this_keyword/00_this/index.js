@@ -13,7 +13,7 @@ console.log(this)
 
     in function this returns as a window  
 
-    if the vlaue of this is undefined or null
+    if the vlaue of this is undefined or nul l
     then this keyword will be replaced with globalObject only in non-strict mode
 
     this keyword value depends on how the function is called (window.function_name()) or simply calling the fucntion in strict mode
