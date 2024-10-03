@@ -1,5 +1,4 @@
 /*
-
     1. Promise can be created using a new Promise() constructor function.
     2. This constructor function takes a callback function as parameter. 
     3. The callback function has 2 arguments named 'resolve' and 'reject'. Resolve and reject are the inbuilt functions provided by JS.

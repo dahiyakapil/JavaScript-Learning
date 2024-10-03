@@ -7,7 +7,7 @@ const person = {
 const person1 = {
     firstName: "Kapil",
     lastName: "Dahiya"
-}
+} 
 
 const result =  person.fullName.apply(person1);
 console.log(result);
