@@ -1,5 +1,4 @@
 /*
-
 Primitive data types
     string
     undefined
@@ -42,3 +41,4 @@ let n;
 console.log(n) // undefined
 
 // -------------------------- Boolean --------------------
+

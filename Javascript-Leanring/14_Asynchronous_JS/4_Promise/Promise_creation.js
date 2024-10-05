@@ -20,14 +20,14 @@
 */
 
 // 1: using then and resolve
-const promiseOne = new Promise(function (resolve, reject) {
+const promiseFirst = new Promise(function (resolve, reject) {
   setTimeout(function () {
-    console.log("Async task1 is completed");
+    console.log("Async task is completed");
     resolve();
   }, 2000);
 });
 
-promiseOne.then(function () {
+promiseFirst.then(function () {
   console.log("Promise consumed");
 });
 
