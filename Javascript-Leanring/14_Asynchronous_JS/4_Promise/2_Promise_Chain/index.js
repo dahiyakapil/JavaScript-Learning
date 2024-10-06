@@ -10,79 +10,113 @@
     9. We can have multiple catch based on requirement and then a general catch at the end.
     10. Always remember to return a value in the promise chain for the next .then to use .
     11. If it returns a value => It will be  used as an argument in next function. If it is a promise then the next .then in the promise chain is attached to the promise returned by the current callback function.
+    
 */
 
+// const cart = ['shoes', 'pants', 'kurta'];
 
+// createOrder(cart)
+//   .then(function(orderId) {
+//     console.log(orderId);
+//     return orderId;
+//   })
+//   .then(function(orderID) {
+//     return proceedToPayment(orderID)
+//   })
+//   .then(function({ message, amt }) {
+//     console.log(message, 'of amount:', amt);
+//     return showOrderSummary(message, amt);
+//   })
+//   .then(function({ message, amt }) {
+//     console.log('Your wallet has beed debited by:', amt);
+//   })
+//   .catch(function(err) {
+//     console.log(err.message);
+//   })
+//   .then(function() {
+//     console.log('No matter what happens, I will get executed');
+//   });
 
-const cart = ['shoes', 'pants', 'kurta'];
+// function createOrder(cart) {
+//   const pr = new Promise(function(resolve, reject) {
+//     // create order
+//     // Validate Cart
+//     // orderId
+//     if (!validateCart(cart)) {
+//       const err = new Error('Cart is not valid!');
+//       reject(err);
+//     }
+//     // logic for createOrder
+//     const orderId = '12345';
+//     if (orderId) {
+//       setTimeout(function() {
+//         resolve(orderId);
+//       }, 5000)
+//     }
+//   });
 
-createOrder(cart)
-  .then(function(orderId) {
-    console.log(orderId);
-    return orderId;
-  })
-  .then(function(orderID) {
-    return proceedToPayment(orderID)
-  })
-  .then(function({ message, amt }) {
-    console.log(message, 'of amount:', amt);
-    return showOrderSummary(message, amt);
-  })
-  .then(function({ message, amt }) {
-    console.log('Your wallet has beed debited by:', amt);
-  })
-  .catch(function(err) {
-    console.log(err.message);
-  })
-  .then(function() {
-    console.log('No matter what happens, I will get executed');
-  });
+//   return pr;
+// }
 
+// function proceedToPayment(orderID) {
+//   // Logic for handling payment.
+//   // This function returns a promise
+//   return new Promise(function(resolve, reject) {
+//     // logic
+//     resolve({ message: `Payment Successful for order id: ${orderID}`, amt: 2500 });
+//   })
+// }
 
+// function showOrderSummary(paymentInfo, amt) {
+//   return new Promise(function(resolve, reject) {
+//     // console.log(amt);
+//     if (amt >= 2000) {
+//       resolve({ message: 'You have ordered items that cost ${amt} RS', amt });
+//     } else {
+//       reject(new Error('Please buy more for discount'));
+//     }
+//   })
+// }
+
+// function validateCart(cart) {
+//   // code to validate cart.
+//   return true;
+//   // return false;
+// }
+
+// let's create a promise
+
+const cart = ["shoes", "jeans", "shirts"];
+
+const promise = createOrder(cart);
+console.log(promise); // will be pending cause it's an sync operation
+
+promise.then(function (orderID) {
+  console.log(orderID);
+});
 
 function createOrder(cart) {
-  const pr = new Promise(function(resolve, reject) {
+  const pr = new Promise(function (resolve, reject) {
     // create order
-    // Validate Cart
-    // orderId
+    // validate cart
+    // orderID
     if (!validateCart(cart)) {
-      const err = new Error('Cart is not valid!');
+      const err = new Error("Cart is not valid");
       reject(err);
     }
-    // logic for createOrder
-    const orderId = '12345';
-    if (orderId) {
-      setTimeout(function() {
-        resolve(orderId);
-      }, 5000)
+
+    const orderID = "12345";
+    if (orderID) {
+      // if there is an api call or an async operation then
+      setTimeout(function () {
+        resolve(orderID);
+      }, 5000);
+      // resolve(orderID);
     }
   });
-
   return pr;
 }
 
-function proceedToPayment(orderID) {
-  // Logic for handling payment.
-  // This function returns a promise
-  return new Promise(function(resolve, reject) {
-    // logic
-    resolve({ message: `Payment Successful for order id: ${orderID}`, amt: 2500 });
-  })
-}
-
-function showOrderSummary(paymentInfo, amt) {
-  return new Promise(function(resolve, reject) {
-    // console.log(amt);
-    if (amt >= 2000) {
-      resolve({ message: 'You have ordered items that cost ${amt} RS', amt });
-    } else {
-      reject(new Error('Please buy more for discount'));
-    }
-  })
-}
-
 function validateCart(cart) {
-  // code to validate cart.
-  return true;
-  // return false;
+  return false;
 }
