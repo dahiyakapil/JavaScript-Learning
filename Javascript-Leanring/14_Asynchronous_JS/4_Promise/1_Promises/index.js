@@ -13,7 +13,8 @@
 
     Promises are immutatable, we can't update the state of promise
 
-    
+    key Points
+    1. Promises help to handle async code in js
 
 
 */
