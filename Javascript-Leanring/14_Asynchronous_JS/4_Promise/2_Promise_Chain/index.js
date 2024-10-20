@@ -5,12 +5,12 @@
     4. We can only resolve or reject a promise. Nothing else can be done.
     5. An error can also be created using new Error('error message').
     6. There is also .catch() which is used to attach a failure callback function that handles any error that pops up during the execution of promise chain.
-    7. .catch only handles error of .then() that are present above it. If there is any .then() below it, catch will not handle any error for that, also that .then will get executed no matter what.
+    7. .catch only handles error of .then() that are present above it. If there is any .then() below it, catch will not handle any error for that, also that .then will get executed no matters what.
     8. It can be useful in a way if we want to catch error for a particular portion of a chain.
     9. We can have multiple catch based on requirement and then a general catch at the end.
     10. Always remember to return a value in the promise chain for the next .then to use .
     11. If it returns a value => It will be  used as an argument in next function. If it is a promise then the next .then in the promise chain is attached to the promise returned by the current callback function.
-    
+
 */
 
 // const cart = ['shoes', 'pants', 'kurta'];

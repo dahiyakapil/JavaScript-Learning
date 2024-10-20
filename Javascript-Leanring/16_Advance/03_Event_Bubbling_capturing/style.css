@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    min-width: 100px;
+    min-height: 100px;
+    padding: 30px;
+    border: 1px solid black;
+    
+  }
+
+#grandparent {
+    background-color: rgb(209, 108, 14);
+}
+
+#parent{
+    background-color: rgb(192, 198, 18);
+}
+
+#child{
+    background-color: rgb(34, 23, 197);
+}
+
+h1 {
+    color: rgb(245, 242, 242);
+}

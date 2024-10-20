@@ -18,20 +18,22 @@ console.log(user.sayHello());
 // const user = fn("Rk", "male", "HP");
 // console.log(user);
 
-const object = {
-  who: "World",
 
-  greet() {
-    return `Hello, ${this.who}!`;  // normal function this work refers to the object
-  },
+//
+// const object = {
+//   who: "World",
 
-  farewell() {
-    return `Goodbye, ${this.who}!`; // refers to the global object fat arrow function this doesn't work
-  },
-};
+//   greet() {
+//     return `Hello, ${this.who}!`;  // normal function this work refers to the object
+//   },
 
-console.log(object.greet()); // What is logged?
-console.log(object.farewell()); // What is logged?
+//   farewell() {
+//     return `Goodbye, ${this.who}!`; // refers to the global object fat arrow function this doesn't work
+//   },
+// };
+
+// console.log(object.greet()); // What is logged?
+// console.log(object.farewell()); // What is logged?
 
 
 

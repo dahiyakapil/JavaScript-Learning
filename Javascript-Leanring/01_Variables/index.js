@@ -46,7 +46,7 @@ console.log(x)
 let valueOfNumber = 23
 console.log(valueOfNumber)
 
-// hoisting is not available in let temporal dead zone
+// hoisting is not available in let because of temporal dead zone
 console.log(m);
 let m = 10
 console.log(m)

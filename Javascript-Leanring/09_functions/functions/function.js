@@ -7,11 +7,10 @@
     5. Named function Expression
     6. Diff b/w Paramters and arguments
     7. First class function
+    8. IIFE (Immediately Invoked Function Expression)
 
     
-@AmanMishra-pn3cq
-2 years ago (edited)
-Things learned:
+
 1.  What is Function Statement ?
 A.  A normal function that we create using Naming convention. & By this we can do the Hoisting.
       For Ex  -  function xyz(){

@@ -19,31 +19,49 @@
 
 */
 
-
-
 // const cart = ["shoes", "jeans", "shirts"];
-
 
 // // without promise
 // // createOrder(cart, function(orderId){
 // //   proceedToPayment(orderId)
-// // }) 
+// // })
 
 // // with promise
 // const promise = createOrder(cart);
 // promise.then(function(orderId){
 //     proceedToPayment(orderId)
-//   }) 
+//   })
+
+/*
+    1. PENDING ----> DATA IS GETTING TO BE FETCHED
+    2. FULLFILLED ------> DATA HAS BEEN FETCHED SUCCEFFULLY...
+    3. REJECT ---> OPEARTION HAS BEEN FAILED
+*/
+
+// JS SYNC, ASYNC
 
 const GITHUB_URL = "https://api.github.com/users/dahiyakapil";
 const user = fetch(GITHUB_URL); // first it will be undefined and then will return a promise object after some time when the data will be there and state of promise will be : Pending
+// ASYNC OPEARTION
 
+console.log(user); // SYNC OPEARATION
 
+//  but when we console the user the state will be fullfilled and prmoise will be pending again, promise result will be Response .......... runs sync as fetch was doing async operation of fetching the github url data and js does not wait for anyone to execute so that's why it shows the promise is pending
 
-console.log(user) //  but when we console the user the state will be fullfilled and prmoise will be pending again, promise result will be Response .......... runs sync as fetch was doing async operation of fetching the github url data and js does not wait for anyone to execute so that's why it shows the promise is pending 
+user.then(function (data) {
+  console.log(data);
+});
 
+// it will print the data and promise state will be fullfilled and promise result will be response
 
-user.then(function (data) { // it will print the data and promise state will be fullfilled and promise result will be response
-    console.log(data);
-})
+const promiseOne = new Promise(function () {
+  setTimeout(function (resolve, reject) {
+    console.log("Promise one will come after 6 seconds"); // Async
+  }, 6000);
+});
 
+console.log("this will execute first before promise"); // sync
+
+promiseOne.then(function () {
+  console.log("Promise hab been consumed succefully");
+});
