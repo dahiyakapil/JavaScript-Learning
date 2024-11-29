@@ -1,42 +1,23 @@
-// What are the possible ways to create objects in JavaScript
 
-// const obj = {
-//     firstname: "Kapil",
-//     lastname: "Dahiya"
-// }
+// 1 way
+const obj = {
+  name: "kapil",
+  age: 21
+}
 
-// console.log(obj.firstname);
+console.log(obj.name);
 
-function Car(make, model, year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    
-    this.getDetails = function() {
-      return `${this.make} ${this.model}, built in ${this.year}`;
-    };
-  }
+// 2 using builtin new object constructor
+const person = new Object();
+person.name = "Alice";
+person.age = 25;
+console.log(person.name)
+
+// 3 using constructor function
+function constFunc(name, age) {
+  this.name = name;
+  this.age = age;
   
-  // Creating an object instance
-  const myCar = new Car('Toyota', 'Corolla', 2020);
-  console.log(myCar.getDetails()); 
-
-
-  let vehicle = {
-    wheels: '4',
-    fuelType: 'Gasoline',
-    color: 'Green'
-  }
-  let carProps = {
-    type: {
-      value: 'Volkswagen'
-    },
-    model: {
-      value: 'Golf'
-    }
-  }
-  
-  var car = Object.create(vehicle, carProps);
-  console.log(car.model);
-
-  
+  console.log("The name of person is: "+ name + "and age is: "+ age);
+}
+const person1 = new Person("James", 25);
