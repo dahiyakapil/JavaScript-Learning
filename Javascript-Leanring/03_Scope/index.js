@@ -1,4 +1,4 @@
-// before 2015 only there were golbal scope and function scope but after ES6 let and const block scope entroduced 
+// before 2015 only there were golbal scope and function scope but after ES6 let and const block scope introduced 
 
 // ---------------------Block scoped---------------------------
 {
