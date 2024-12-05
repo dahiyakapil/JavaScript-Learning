@@ -82,7 +82,7 @@ function getValue (a, b) { // parameters
     return a + b;
 }
 
- console.log( getValue(1, 2)); // arguments
+ console.log(getValue(1, 2)); // arguments
 
 
  /*

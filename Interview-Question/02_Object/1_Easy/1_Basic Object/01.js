@@ -12,4 +12,5 @@ const obj = {
 }
 
 console.log("Name: " + obj.name + " & age: " + obj.age);
-console.log("Favorite Color is: " + obj["favorite color"])
+console.log("Favorite Color is: " + obj["favorite color"]);
+
