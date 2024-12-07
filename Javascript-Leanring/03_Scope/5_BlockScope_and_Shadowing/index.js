@@ -27,6 +27,11 @@
     6. shadowing let with var is illegal shadowing and gives error.
     7. var value is stored in nearest outer function or global scope and hence can be accessed outside block as well whereas same is not the case with let and const.
 
+    So there are three Scope
+    1. Global Scope --> Var 
+    2. Script Scope --> let and const
+    3. Block Scope ---> let and const
+
 
  */
 
