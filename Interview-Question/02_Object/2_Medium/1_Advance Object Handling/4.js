@@ -17,6 +17,7 @@ const obj = {
 };
 console.log(Object.keys(obj));
 console.log(Object.values(obj));
+console.log(Object.entries(obj))
 console.log(obj);
 
 //------------------------------------------------------------------
@@ -84,3 +85,5 @@ const source = {
 
 const returnNewObject = Object.assign({}, target, source);
 console.log(returnNewObject);
+console.log(target)
+console.log(source)

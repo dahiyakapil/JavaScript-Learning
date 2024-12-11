@@ -5,11 +5,9 @@
 
     Closure is when a function is able to remember and access its lexical scope even when that function is executing outside its lexical scope.
 
-    What are closures in JS?
-
-
-
  */
+
+    
 // var m = 10;
 
 // function x() {
@@ -92,3 +90,5 @@ outer()(); // In this the first curly braces are used for calling the outer func
   Also, when you return inner() function and invoke outer() function, it will still console value of variable a . So, it remembered it’s outer lexical env even when called in other scope.
 
 */
+
+

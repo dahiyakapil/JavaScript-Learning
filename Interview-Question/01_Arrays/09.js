@@ -24,3 +24,5 @@ console.log("Orignal Arrays", arr1 , arr2)
 
 //using spread opearator
 console.log("Addition of arrays using spread operator ---> ",...arr1, ...arr2);
+console.log("Orignal Arrays", arr1 , arr2)
+

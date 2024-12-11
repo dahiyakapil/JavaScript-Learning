@@ -20,3 +20,4 @@ console.log(arr); // modified array
 let arr2 = [6, 7, 8, 9, 10];
 let sortedReverseArray = arr2.sort((a, b) => b - a);
 console.log(sortedReverseArray);
+

@@ -18,10 +18,10 @@
     AggregateError	    Represents multiple errors (e.g., in Promise.any).
 */
 
-// const error = new Error("Something went wrong!");
-// console.log(error.name);    // "Error"
-// console.log(error.message); // "Something went wrong!"
-// console.log(error.stack);   // Displays the stack trace
+const error = new Error("Something went wrong!");
+console.log(error.name);    // "Error"
+console.log(error.message); // "Something went wrong!"
+console.log(error.stack);   // Displays the stack trace
 
 try {
     throw new Error("Custom error occurred!");

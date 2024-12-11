@@ -21,13 +21,13 @@ const obj = {};
 //     console.log("Object is not empty")
 // }
 
+// let isEmpty = true;
+// for (const key in obj) {
+//     if (obj.hasOwnProperty(key)) {
+//         isEmpty = false;
+//         break;
+//     }
+// }
 
-let isEmpty = true;
-for (const key in obj) {
-    if (obj.hasOwnProperty(key)) {
-        isEmpty = false;
-        break;
-    }
-}
+// console.log(isEmpty ? "The object is empty" : "The object is not empty");
 
-console.log(isEmpty ? "The object is empty" : "The object is not empty");

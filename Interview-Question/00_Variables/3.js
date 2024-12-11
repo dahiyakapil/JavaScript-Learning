@@ -1,4 +1,4 @@
-// What are global variables
+// // What are global variables
 
 let x = 10;
 function readvalue() {
@@ -8,3 +8,6 @@ function readvalue() {
 
 readvalue();
 console.log("Glabal Scope - ", x); // 10 due to global scope
+
+
+

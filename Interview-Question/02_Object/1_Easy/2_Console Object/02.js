@@ -11,4 +11,25 @@ const person = {
 };
 
 
-console.dir(person)
+console.dir(person);
+
+
+const user = {
+    name: "Alice",
+    age: 25,
+    contact: {
+      email: "alice@example.com",
+      phone: "123-456-7890"
+    },
+    hobbies: ["reading", "traveling", "coding"],
+    active: true
+  };
+  
+  // Use console.log to display the object
+  console.log("Using console.log:");
+  console.log(user);
+  
+  // Use console.dir to inspect the object
+  console.log("\nUsing console.dir:");
+  console.dir(user);
+    

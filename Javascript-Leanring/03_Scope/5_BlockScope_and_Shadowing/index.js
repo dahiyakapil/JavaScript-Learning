@@ -1,15 +1,15 @@
 /*
     Block - 
-    A block scope is helpful there where we have to run multiple statements 
     A block is just a curly braces where we execute our multiple statments
+    A block scope is helpful there where we have to run multiple statements 
     A block {} is used to combine or group the multiple statments all together.
 
     Block Scope -
-    A block scope is a scope where variables and function lies, we can access them in that block scope.
+    A block scope is a scope where variables and function lies, we can access them in that block scope only.
 
     Hoisting in block scope
-    When we declare let and const in block scope, let and const are hoisted in separate memory space [Named Block Scope] 
-    let and const has the space and the name of that scope is Block. where the let and const varibales are placed and firstly the undefined placeholder is reserved for let and const
+    When we declare let and const in block scope, let and const are hoisted in separate memory space [Named Block Scope]. 
+    let and const has the Block space and the name of that scope is Block, where the let and const varibales are placed and firstly the undefined placeholder is reserved for let and const.
 
     Shadowing -
     When we have same named variable outside the block scope then the variable present in the block scope shadows the outside varible from block scope.
@@ -21,7 +21,7 @@
     Key Points:
     1. Code inside curly bracket is called block.
     2. Multiple statements are grouped inside a block so it can be written where JS expects single statements like in if, else, loop, function etc.
-    3. Block values are stored inside separate memory than global. They are stored in block. (the reason let and const are called block scope)
+    3. Block values are stored inside separate memory space than global. They are stored in block. (the reason let and const are called block scope)
     4. Shadowing of variables using var, let and const.
     5. The shadow should not cross the scope of original otherwise it will give error.
     6. shadowing let with var is illegal shadowing and gives error.

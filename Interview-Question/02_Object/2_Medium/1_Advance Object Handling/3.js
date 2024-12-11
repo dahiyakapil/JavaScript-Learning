@@ -9,17 +9,17 @@
 const obj = {};
 
 Object.defineProperty(obj, "firstName", {
-    value: "Kapil", 
-    writable: true, 
-    enumerable: true, 
-    configurable: true // Allow redefinition or deletion if needed
+  value: "Kapil",
+  writable: true,
+  enumerable: true,
+  configurable: true, // Allow redefinition or deletion if needed
 });
 
 Object.defineProperty(obj, "lastName", {
-    value: "Sharma", 
-    writable: true, 
-    enumerable: true, 
-    configurable: true // Allow redefinition or deletion if needed
+  value: "Dahiya",
+  writable: true,
+  enumerable: true,
+  configurable: true, // Allow redefinition or deletion if needed
 });
 
 console.log(obj); // { firstName: 'Kapil', lastName: 'Sharma' }

@@ -3,13 +3,13 @@
 
     There are various ways with the help of we can find the min and max value in an array
 
-    1. Using spread Operator
+    1. Using spread Operator with Math.max or Math.min
     2. Using reduce() method
     3. using for loop
     
 */
 
-// Math.min and Math.max spread operator
+// // Math.min and Math.max spread operator
 let arr = [1, 2, 34, 4, 5];
 let minValue = Math.min(...arr);
 let maxValue = Math.max(...arr);
@@ -46,4 +46,6 @@ for (let i = 1; i < arr3.length; i++) {
 
 console.log("Min Value:", minVal); // Output: Min Value: 11
 console.log("Max Value:", maxVal); // Output: Max Value: 999
+
+
 

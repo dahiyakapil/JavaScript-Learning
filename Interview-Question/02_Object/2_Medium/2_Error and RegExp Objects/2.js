@@ -8,11 +8,11 @@
 const withdraw = 300;
 const balance = 200;
 try {
-    if(withdraw > balance) {
-        throw new Error("Oops! You don't have enough balance");
-    }
+  if (withdraw > balance) {
+    throw new Error("Oops! You don't have enough balance");
+  }
 } catch (error) {
-    console.log(error.name);    // "Error"
-    console.log(error.message); // "Custom error occurred!"
-    console.log(error.stack);   // Stack trace
+  console.log("Name of the Error: ", error.name); // "Error"
+  console.log("Message of the Error: ", error.message); // "Custom error occurred!"
+  console.log("Stack of the Error: ", error.stack); // Stack trace
 }

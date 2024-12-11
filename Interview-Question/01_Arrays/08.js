@@ -7,6 +7,6 @@ console.log(![23, 21, 99])
 console.log(-[33, 999, 100]) // Nan 
 
 /*
-    What is heppening here that the JavaScript tries to coerce the value into cstring but failes to convert it into number so it returns NaN
+    What is heppening here that the JavaScript tries to coerce the value into string but failes to convert it into number so it returns NaN
 
 */

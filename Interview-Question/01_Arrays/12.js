@@ -6,7 +6,6 @@
     2. Using for...of loop
     3. Using for each loop
 
-
 */
 
 // const arr = [1, 2, 3, 4, 5];

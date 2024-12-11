@@ -7,7 +7,18 @@
 
 */
 
-let arr = [1, 2, 3, 4, 5];
-let result = arr.slice(0, 3); // start index = 0 and end index = 3
-console.log(result); // 1 2 3
-console.log(arr);
+// let arr = [1, 2, 3, 4, 5];
+// let result = arr.slice(0, 3); // start index = 0 and end index = 3
+// console.log(result); // [1, 2, 3]
+// console.log(arr); // [1, 2, 3, 4, 5] Original Array
+
+
+const arr = [0, 1, 2, 3, 4, 5];
+
+const filteredArr = arr.filter((num) => {
+    if (num <= 2) {
+        return num; // Returns 0, 1, or 2 for truthy evaluation
+    }
+});
+
+console.log(filteredArr);

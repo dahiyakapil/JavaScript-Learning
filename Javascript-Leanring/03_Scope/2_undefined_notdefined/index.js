@@ -1,5 +1,5 @@
 /*
-    1. Undefined is a Special Placeholder which is used to reserve memory for the variables in the memory creation phase. Even before a single line of code is executed JS engine assigns undefined to the variables.
+    1. Undefined is a Special Placeholder which is used to reserve memory for the variables in the memory creation phase. Even before a single line of code is executed, JS engine assigns undefined to the variables.
 
     2. Not Defined means if we try to console or access any variable which is not declared in the code then we get Not Defined error.
 

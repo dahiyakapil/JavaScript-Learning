@@ -10,9 +10,9 @@ const obj = {
     age: 22
 }
 
-// for(const value of Object.values(obj)){
-//     console.log(value)
-// }
+for(const value of Object.values(obj)){
+    console.log(value)
+}
 
 for(const [key, value] of Object.entries(obj)) {
     console.log(`${key}: ${value}`)
