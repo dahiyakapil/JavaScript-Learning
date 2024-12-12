@@ -17,7 +17,7 @@ arr2.sort((a, b) => b - a);
 console.log(arr2); // Sorting in ascending order
 
 // Sorting String
-const users = ["Kapil", "James", "Rock", "Dave"];
+const users = ["Kapil", "James", "Rock", "Dave", "abc"];
 users.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 console.log(users);
 
