@@ -8,7 +8,7 @@
     4.  Remember undefined !== not defined.
  */
 
-    // GEC place a placeholder for this variable to filled this memory space. This memory space is reserved for this variable
+    // Global Execution Context place a placeholder for this variable to filled this memory space. This memory space is reserved for this variable
     console.log(a) 
     var a = 10;
     console.log(a)

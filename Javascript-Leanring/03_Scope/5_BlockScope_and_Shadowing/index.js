@@ -5,7 +5,7 @@
     A block {} is used to combine or group the multiple statments all together.
 
     Block Scope -
-    A block scope is a scope where variables and function lies, we can access them in that block scope only.
+    A block scope is a scope where variables and function lies, we can access them in that block scope only but outside from that block we can not access the variable or function.
 
     Hoisting in block scope
     When we declare let and const in block scope, let and const are hoisted in separate memory space [Named Block Scope]. 
