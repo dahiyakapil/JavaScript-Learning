@@ -63,12 +63,13 @@ function outer() {
   function inner() {
     console.log(a);
   }
+  // inner(); // 1 way of returning the function ----> calling outside the outer() like this....
+
+  return inner; // 2nd way of returning the function
 
   // return function inner() { // 3rd way of returing function inside function... this is cool way and best way
   //   console.log(a);
   // }
-  // inner(); // 1 way of returning the function ----> calling outside the outer() like this....
-  return inner; // 2nd way of returning the function
 }
 
 // we can call the innner function with using only outer() .... This will work only when we are returning the function in outer function in this way ---> inner()

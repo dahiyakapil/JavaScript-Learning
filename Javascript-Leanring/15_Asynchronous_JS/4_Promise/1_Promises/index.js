@@ -6,7 +6,7 @@
 
     There are three states of promise:
     1. Pending (intial state)
-    2. Fullfilled - meaning that the opeartion was completed successfully
+    2. Fullfilled - meaning that the operation was completed successfully
     3. Rejected - meaning that the operation has failed
 
     Promise result ---> firstly it is undefined, and eventually in result got response in it and after some time there will promise state : Pending
@@ -15,6 +15,12 @@
 
     key Points
     1. Promises help to handle async code in js
+
+    Benefits of Using Promises
+    1. Improved Readability: Easier to read and maintain compared to nested callbacks.
+    2. Error Handling: Centralized error handling with .catch().
+    3. Chaining: Simplifies managing dependent asynchronous operations.
+    4. Better API Design: Promises make it easier to design APIs that handle asynchronous actions.
 
 
 */
@@ -46,7 +52,7 @@ const user = fetch(GITHUB_URL); // first it will be undefined and then will retu
 
 console.log(user); // SYNC OPEARATION
 
-//  but when we console the user the state will be fullfilled and prmoise will be pending again, promise result will be Response .......... runs sync as fetch was doing async operation of fetching the github url data and js does not wait for anyone to execute so that's why it shows the promise is pending
+//  but when we console the user the state will be fullfilled and prmoise will be pending again, promise result will be Response .......... runs sync as fetch was doing async operation of fetching the github url data and js does not wait for anyone to execute so that's why it shows the promise is pending.
 
 user.then(function (data) {
   console.log(data);

@@ -4,9 +4,9 @@ let a = 1
 var b = 2
 const c = 3
 
-console.log(typeof(a))
-console.log(typeof(b))
-console.log(typeof(c))
+console.log(typeof(a));
+console.log(typeof(b));
+console.log(typeof(c));
 
 // // var is funtion scoped
 // var globalScoped = "This is global scoped var"

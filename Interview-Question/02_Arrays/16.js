@@ -15,9 +15,9 @@ const spreadFlatArray = [].concat(...arr);
 
 // Multi dimensional Array
 const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
-const oneStepFlat = multiDimensionalArr.flat(1)
-const twoStepFlat = multiDimensionalArr.flat(2)
-const fullyFlat = multiDimensionalArr.flat(Infinity)
+const oneStepFlat = multiDimensionalArr.flat(1);
+const twoStepFlat = multiDimensionalArr.flat(2);
+const fullyFlat = multiDimensionalArr.flat(Infinity);
 
 console.log(oneStepFlat)
 console.log(twoStepFlat)

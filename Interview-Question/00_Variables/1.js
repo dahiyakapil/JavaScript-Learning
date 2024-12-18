@@ -10,7 +10,7 @@ switch(x) {
     case 1: {
         let name = "lastname";
         break;
-    }
+    }            
 }
 
 // var a = 20;
