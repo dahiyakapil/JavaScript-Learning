@@ -12,6 +12,9 @@
     
      Note: for of loop does not work with objects cause objects are not iterable
 
+     for (variable of iterable)
+    “Iterable can be ‘Array, String, array-like objects, TypedArray, Map, Set and user-defined iterables”.
+
 */
 
 
